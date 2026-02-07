@@ -162,7 +162,7 @@ state_escolha:
 <h2 id="como-executar">Como Executar</h2>
 <ol>
   <li>Conecte o microcontrolador ATmega328P ao motor e sensores.</li>
-  <li>Compile e carregue o firmware em Assembly usando AVR Studio ou Atmel Studio.</li>
+  <li>Compile e carregue o firmware em hexadecimal usando o Atmel Studio e o hexloader.</li>
   <li>Ligue o sistema e navegue pelos menus no display LCD.</li>
   <li>Ajuste limites de temperatura, corrente e parâmetros PWM conforme necessário.</li>
   <li>Teste a funcionalidade de soft start e desligamento automático.</li>
