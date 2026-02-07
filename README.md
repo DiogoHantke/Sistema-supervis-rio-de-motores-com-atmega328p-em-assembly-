@@ -141,10 +141,23 @@ state_escolha:
 <h2 id="projeto-montado">Projeto Montado</h2>
 
 <p align="center">
-  <img src="projeto_fisico.jpg" width="700" alt="Projeto Físico">
+  <img src="proj_fisico.jpg" width="700" alt="Projeto Físico">
 </p>
 
 <p>Sistema montado com ATmega328P, sensores de corrente/temperatura, motor de teste e display LCD funcionando na prática.</p>
+
+---
+
+<h2 id="exemplos-visuais">Exemplos Visuais</h2>
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+  <div style="flex: 1;">
+    <h4>Simulação no Proteus</h4>
+    <img src="GIF_projeto.gif" width="400" alt="GIF Simulação">
+  </div>
+</div>
+
+---
 
 <h2 id="como-executar">Como Executar</h2>
 <ol>
