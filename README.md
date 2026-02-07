@@ -141,10 +141,7 @@ state_escolha:
 <h2 id="projeto-montado">Projeto Montado</h2>
 
 <p align="center">
-  <video width="700" controls>
-    <source src="GIF_projeto_real.mp4" type="video/mp4">
-    Seu navegador não suporta o elemento de vídeo.
-  </video>
+  <img src="projeto_fisico.jpg" width="700" alt="Projeto Físico">
 </p>
 
 <p>Sistema montado com ATmega328P, sensores de corrente/temperatura, motor de teste e display LCD funcionando na prática.</p>
@@ -160,10 +157,7 @@ state_escolha:
   </div>
   <div style="flex: 1;">
     <h4>Interface e Medições Reais</h4>
-    <video width="400" controls>
-      <source src="GIF_projeto_real.mp4" type="video/mp4">
-      Seu navegador não suporta o elemento de vídeo.
-    </video>
+    <img src="projeto_fisico.jpg" width="400" alt="Projeto Real">
   </div>
 </div>
 
