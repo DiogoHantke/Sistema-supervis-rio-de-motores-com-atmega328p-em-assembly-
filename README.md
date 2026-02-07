@@ -146,23 +146,6 @@ state_escolha:
 
 <p>Sistema montado com ATmega328P, sensores de corrente/temperatura, motor de teste e display LCD funcionando na prática.</p>
 
----
-
-<h2 id="exemplos-visuais">Exemplos Visuais</h2>
-
-<div style="display: flex; flex-wrap: wrap; gap: 20px;">
-  <div style="flex: 1;">
-    <h4>Simulação no Proteus</h4>
-    <img src="GIF_projeto.gif" width="400" alt="GIF Simulação">
-  </div>
-  <div style="flex: 1;">
-    <h4>Interface e Medições Reais</h4>
-    <img src="projeto_fisico.jpg" width="400" alt="Projeto Real">
-  </div>
-</div>
-
----
-
 <h2 id="como-executar">Como Executar</h2>
 <ol>
   <li>Conecte o microcontrolador ATmega328P ao motor e sensores.</li>
