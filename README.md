@@ -118,7 +118,7 @@ state_escolha:
 <h2 id="estrutura-dos-arquivos">Estrutura dos Arquivos</h2>
 <p>O projeto está organizado da seguinte forma:</p>
 <ul>
-  <li><strong>main.asm</strong>: arquivo principal do firmware em Assembly. <a href="Trabalho_microcontroladores_2/main.asm">Clique aqui para acessar</a></li>
+  <li><strong>main.asm</strong>: arquivo principal do firmware em Assembly. <a href="Trabalho_microcontroladores_2/Trabalho_microcontroladores_2/main.asm">Clique aqui para acessar</a></li>
   <li><strong>.pdsprj</strong>: arquivos de projeto do Proteus para simulação do circuito eletrônico.</li>
   <li><strong>Trabalho_microcontroladores_2/</strong>: pasta com o projeto completo do Atmel Studio, incluindo arquivos de configuração, código e compilados.</li>
 </ul>
