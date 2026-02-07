@@ -1,10 +1,9 @@
 <h1 align="center">Sistema Supervisório de Motores – ATmega328P (Assembly)</h1>
 
-<p align="center">
-  <img src="link_da_sua_imagem_aqui.png" width="700" alt="Banner do Projeto">
-</p>
-
 <p align="center"><em>Projeto didático de sistemas embarcados com ATmega328P, desenvolvido em Assembly para estudo avançado de microcontroladores e controle de motores elétricos.</em></p>
+
+---
+<p align="center" style="color:red;"><strong>Observação:</strong> Este projeto ainda está em desenvolvimento. A versão mais recente contém alguns bugs na programação, mas o sistema já funcionou corretamente em testes anteriores e foi bem avaliado.</p>
 
 ---
 
@@ -22,8 +21,6 @@
   <li><a href="#como-executar">Como Executar</a></li>
   <li><a href="#licença">Licença</a></li>
 </ul>
-
----
 
 <h2 id="descrição-técnica">Descrição Técnica</h2>
 <p>Este projeto é puramente didático, criado para consolidar conhecimento da disciplina de microcontroladores no curso de Engenharia Mecatrônica.</p>
@@ -74,14 +71,27 @@
 <h4>Menu Salvar Parâmetros</h4>
 <ul>
   <li>Definir valores de parâmetros a serem salvos</li>
-  <li>Selecionar local de memória</li>
+  <li>Selecionar local de memória (EEPROM)</li>
 </ul>
+
+<h4>Exemplo de Código do Menu</h4>
+<pre>
+; Lógica de navegação do menu
+state_escolha:
+    sbis pinb, btn_baixo
+    rcall debounce_baixo
+    sbis pinb, btn_cima
+    rcall debounce_cima
+    sbis pinb, btn_enter
+    rcall state_enter
+    rjmp state_escolha
+</pre>
 
 ---
 
 <h2 id="arquitetura-do-sistema">Arquitetura do Sistema</h2>
 <ul>
-  <li>Microcontrolador: ATmega328P (Arduino)</li>
+  <li>Microcontrolador: ATmega328P</li>
   <li>Sensores: Temperatura e corrente analógicos</li>
   <li>Controle: PWM para acionamento do motor</li>
   <li>Interface: Display LCD 16x2 para menus e status do sistema</li>
@@ -108,7 +118,7 @@
 <h2 id="estrutura-dos-arquivos">Estrutura dos Arquivos</h2>
 <p>O projeto está organizado da seguinte forma:</p>
 <ul>
-  <li><strong>main.asm</strong>: arquivo principal do firmware em Assembly. <a href="link_do_arquivo_main.asm">Clique aqui para acessar</a></li>
+  <li><strong>main.asm</strong>: arquivo principal do firmware em Assembly. <a href="Trabalho_microcontroladores_2/main.asm">Clique aqui para acessar</a></li>
   <li><strong>.pdsprj</strong>: arquivos de projeto do Proteus para simulação do circuito eletrônico.</li>
   <li><strong>Trabalho_microcontroladores_2/</strong>: pasta com o projeto completo do Atmel Studio, incluindo arquivos de configuração, código e compilados.</li>
 </ul>
@@ -117,18 +127,12 @@
 
 <h2 id="esquemas-eletrônicos">Esquemas Eletrônicos</h2>
 
+<p>Simulação do circuito no Proteus e diagramas de ligação:</p>
+
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
   <div style="flex: 1;">
     <h4>Diagrama do Circuito Principal</h4>
-    <img src="link_do_esquema_principal.png" width="400" alt="Esquema Principal">
-  </div>
-  <div style="flex: 1;">
-    <h4>Conexões do Display LCD 16x2</h4>
-    <img src="link_do_esquema_lcd.png" width="400" alt="Esquema LCD">
-  </div>
-  <div style="flex: 1;">
-    <h4>Sensores e Entradas Analógicas</h4>
-    <img src="link_do_esquema_sensores.png" width="400" alt="Esquema Sensores">
+    <img src="Projeto_eletronico.png" width="400" alt="Esquema Principal">
   </div>
 </div>
 
@@ -137,10 +141,13 @@
 <h2 id="projeto-montado">Projeto Montado</h2>
 
 <p align="center">
-  <img src="link_da_sua_imagem_fisica_aqui.jpg" width="700" alt="Projeto Montado">
+  <video width="700" controls>
+    <source src="GIF_projeto_real.mp4" type="video/mp4">
+    Seu navegador não suporta o elemento de vídeo.
+  </video>
 </p>
 
-<p>Sistema montado com ATmega328P, sensores de corrente/temperatura, motor de teste e display LCD.</p>
+<p>Sistema montado com ATmega328P, sensores de corrente/temperatura, motor de teste e display LCD funcionando na prática.</p>
 
 ---
 
@@ -148,12 +155,15 @@
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
   <div style="flex: 1;">
-    <h4>Interface de Menus</h4>
-    <img src="link_do_seu_gif_aqui.gif" width="400" alt="GIF Menus">
+    <h4>Simulação no Proteus</h4>
+    <img src="GIF_projeto.gif" width="400" alt="GIF Simulação">
   </div>
   <div style="flex: 1;">
-    <h4>Medições e Controle</h4>
-    <img src="link_da_sua_imagem_aqui.png" width="400" alt="Medições">
+    <h4>Interface e Medições Reais</h4>
+    <video width="400" controls>
+      <source src="GIF_projeto_real.mp4" type="video/mp4">
+      Seu navegador não suporta o elemento de vídeo.
+    </video>
   </div>
 </div>
 
